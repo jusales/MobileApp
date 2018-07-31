@@ -43,9 +43,11 @@ const client = new ApolloClient({
 cache: new InMemoryCache(),
 });
 
+const language = "English"
+
 export default () => (
   <ApolloProvider client={client}>
-    <Navigation />
+    <Navigation language={language}/>
     </ApolloProvider>
 );
 
